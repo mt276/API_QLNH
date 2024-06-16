@@ -3,24 +3,8 @@
   "WorkspaceRootPath": "D:\\Git\\API_QLNH\\API_QLNH\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{95BA4D64-DCDB-49A6-891B-8A864AA77F0B}|API_QLNH.csproj|d:\\git\\api_qlnh\\api_qlnh\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95BA4D64-DCDB-49A6-891B-8A864AA77F0B}|API_QLNH.csproj|solutionrelative:controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{95BA4D64-DCDB-49A6-891B-8A864AA77F0B}|API_QLNH.csproj|d:\\git\\api_qlnh\\api_qlnh\\controllers\\menu_itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95BA4D64-DCDB-49A6-891B-8A864AA77F0B}|API_QLNH.csproj|solutionrelative:controllers\\menu_itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95BA4D64-DCDB-49A6-891B-8A864AA77F0B}|API_QLNH.csproj|d:\\git\\api_qlnh\\api_qlnh\\model\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95BA4D64-DCDB-49A6-891B-8A864AA77F0B}|API_QLNH.csproj|solutionrelative:model\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95BA4D64-DCDB-49A6-891B-8A864AA77F0B}|API_QLNH.csproj|d:\\git\\api_qlnh\\api_qlnh\\model\\menu_item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95BA4D64-DCDB-49A6-891B-8A864AA77F0B}|API_QLNH.csproj|solutionrelative:model\\menu_item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95BA4D64-DCDB-49A6-891B-8A864AA77F0B}|API_QLNH.csproj|d:\\git\\api_qlnh\\api_qlnh\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95BA4D64-DCDB-49A6-891B-8A864AA77F0B}|API_QLNH.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,67 +22,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Menu_ItemController.cs",
               "DocumentMoniker": "D:\\Git\\API_QLNH\\API_QLNH\\Controllers\\Menu_ItemController.cs",
               "RelativeDocumentMoniker": "Controllers\\Menu_ItemController.cs",
               "ToolTip": "D:\\Git\\API_QLNH\\API_QLNH\\Controllers\\Menu_ItemController.cs",
               "RelativeToolTip": "Controllers\\Menu_ItemController.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAA5wFMAAABJAAAA",
+              "ViewState": "AQIAAHoAAAAAAAAAAAAswIMAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T19:02:45.944Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MenuController.cs",
-              "DocumentMoniker": "D:\\Git\\API_QLNH\\API_QLNH\\Controllers\\MenuController.cs",
-              "RelativeDocumentMoniker": "Controllers\\MenuController.cs",
-              "ToolTip": "D:\\Git\\API_QLNH\\API_QLNH\\Controllers\\MenuController.cs",
-              "RelativeToolTip": "Controllers\\MenuController.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAA3wD4AAAB+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T19:02:34.155Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Menu_Item.cs",
-              "DocumentMoniker": "D:\\Git\\API_QLNH\\API_QLNH\\Model\\Menu_Item.cs",
-              "RelativeDocumentMoniker": "Model\\Menu_Item.cs",
-              "ToolTip": "D:\\Git\\API_QLNH\\API_QLNH\\Model\\Menu_Item.cs",
-              "RelativeToolTip": "Model\\Menu_Item.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T18:52:24.009Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Menu.cs",
-              "DocumentMoniker": "D:\\Git\\API_QLNH\\API_QLNH\\Model\\Menu.cs",
-              "RelativeDocumentMoniker": "Model\\Menu.cs",
-              "ToolTip": "D:\\Git\\API_QLNH\\API_QLNH\\Model\\Menu.cs",
-              "RelativeToolTip": "Model\\Menu.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T18:52:13.436Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Git\\API_QLNH\\API_QLNH\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Git\\API_QLNH\\API_QLNH\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T18:39:32.087Z",
+              "WhenOpened": "2024-06-16T13:53:02.872Z",
               "EditorCaption": ""
             }
           ]

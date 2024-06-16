@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("API_QLNH")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b76e2e6b969bbbb2a5ee8ed385bcda4a952e365d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+24caaa691df255fcb128b9b97a0fe72f7cc8cffc")]
 [assembly: System.Reflection.AssemblyProductAttribute("API_QLNH")]
 [assembly: System.Reflection.AssemblyTitleAttribute("API_QLNH")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using System.Data;
+using System.IO;
+using Microsoft.AspNetCore.Hosting;
 
 namespace API_QLNH.Controllers
 {
@@ -11,9 +13,11 @@ namespace API_QLNH.Controllers
     public class Menu_ItemController : ControllerBase
     {
         private readonly IConfiguration _configuration;
-        public Menu_ItemController(IConfiguration configuration)
+        private readonly IWebHostEnvironment _env;
+        public Menu_ItemController(IConfiguration configuration, IWebHostEnvironment env)
         {
             _configuration = configuration;
+            _env = env;
         }
         [HttpGet]
         public JsonResult Get()
@@ -97,6 +101,54 @@ namespace API_QLNH.Controllers
                 }
             }
             return new JsonResult("Xóa thành công");
+        }
+        [Route("SaveFile")]
+        
+        [HttpPost]
+        public JsonResult SaveFile()
+        {
+            try
+            {
+                var httpRequest = Request.Form;
+                var postedFile = httpRequest.Files[0];
+                string fileName = postedFile.FileName;
+                var physicalPath = _env.ContentRootPath + "/Img/" + fileName;
+
+                using (var stream = new FileStream(physicalPath, FileMode.Create))
+                {
+                    postedFile.CopyTo(stream);
+                }
+                return new JsonResult(fileName);
+
+            }
+            catch (Exception)
+            {
+                return new JsonResult("menuItem0.jpg");
+            }
+            
+        }
+
+        [Route("GetAllMenuItemName")]
+        [HttpGet]
+        public JsonResult GetAllMenuName()
+        {
+            string query = "Select MenuName from dbo.Menu";
+            DataTable table = new DataTable();
+            string? sqlDataSource = _configuration.GetConnectionString("QLNH");
+            SqlDataReader myReader;
+            using (SqlConnection myCon = new SqlConnection(sqlDataSource))
+            {
+                myCon.Open();
+                using (SqlCommand myCommand = new SqlCommand(query, myCon))
+                {
+                    myReader = myCommand.ExecuteReader();
+                    table.Load(myReader);
+                    myReader.Close();
+                    myCon.Close();
+                }
+            }
+            return new JsonResult(table);
+
         }
     }
 }
