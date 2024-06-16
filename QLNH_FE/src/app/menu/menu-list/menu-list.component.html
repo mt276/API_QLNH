@@ -1,1 +1,56 @@
-<p>menu-list works!</p>
+
+<div class="menu-list">
+    <br>
+
+    <button type="button" class="btn btn-primary" id="addMenu" data-bs-toggle="modal" data-bs-target="#myModal" (click)="AddMenu()">
+        Thêm thực đơn
+    </button>
+
+    <br>
+    <!-- The Modal -->
+
+    <div class="modal" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+    
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">{{title}}</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" (click)="Close()"></button>
+                </div>
+    
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <app-menu-add-edit [menu]="_menu" *ngIf="isEdit"></app-menu-add-edit>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+
+    <table class="table table-bordered">
+        <thead>
+            <th>Mã thực đơn</th>
+            <th>Tên thực đơn</th>
+            <th>Tùy chọn</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let Menu of menuList">
+                <td>{{Menu.MenuID}}</td>
+                <td>{{Menu.MenuName}}</td>
+                <td>
+                    <div clas="button-container">
+                        <button type="button" style="margin-right: 20px;" class="btn edit" (click)="EditMenu(Menu)"
+                            data-bs-toggle="modal" data-bs-target="#myModal">
+                            Sửa
+                        </button>
+                        <button type="button" class="btn delete" (click)="DeleteMenu(Menu)">
+                            Xóa
+                        </button>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

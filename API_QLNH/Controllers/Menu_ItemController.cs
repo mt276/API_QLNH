@@ -102,10 +102,10 @@ namespace API_QLNH.Controllers
             }
             return new JsonResult("Xóa thành công");
         }
-        [Route("SaveFile")]
+        [Route("LoadImg")]
         
         [HttpPost]
-        public JsonResult SaveFile()
+        public JsonResult LoadImg()
         {
             try
             {
@@ -128,7 +128,7 @@ namespace API_QLNH.Controllers
             
         }
 
-        [Route("GetAllMenuItemName")]
+        [Route("GetAllMenuName")]
         [HttpGet]
         public JsonResult GetAllMenuName()
         {
