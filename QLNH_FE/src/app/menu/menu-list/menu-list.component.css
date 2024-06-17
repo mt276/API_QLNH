@@ -1,8 +1,8 @@
 
 table {
-	margin-left: 20%;
+	margin-left: 15%;
 	border-collapse: collapse;
-	width: 60%;
+	width: 75%;
 	background-color: white;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -31,6 +31,7 @@ tr:nth-child(even) {
 	color: white;
 }
 .btn.edit {
+	margin-right: 5%;
 	background-color: #4CAF50;
 }
 .btn.delete {
@@ -41,6 +42,6 @@ tr:nth-child(even) {
 }
 
 #addMenu{
-    margin-left:20%;
+    margin-left:15%;
 	background-color: #4CAF50;
 }

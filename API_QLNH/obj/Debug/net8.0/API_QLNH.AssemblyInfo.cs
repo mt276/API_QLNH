@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("API_QLNH")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18b56fa33bacfb977e66ea32170e5bc2865821df")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f3eaae4704c20ef0ce56f4915783c9a7c93438e")]
 [assembly: System.Reflection.AssemblyProductAttribute("API_QLNH")]
 [assembly: System.Reflection.AssemblyTitleAttribute("API_QLNH")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

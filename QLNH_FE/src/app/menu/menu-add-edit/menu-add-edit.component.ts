@@ -7,14 +7,20 @@ import { SharedService } from '../../shared.service';
   styleUrl: './menu-add-edit.component.css'
 })
 export class MenuAddEditComponent implements OnInit {
- 
+
+  constructor(private service:SharedService){}
+  
   menuID:any;
   menuName:any;
 
   @Input() menu:any;
 
+  ngOnInit(): void {
+    this.menuID = this.menu.MenuID;
+    this.menuName = this.menu.MenuName;
+  }
 
-  constructor(private service:SharedService){}
+
 
   AddMenu(){
     var val = {
@@ -35,8 +41,5 @@ export class MenuAddEditComponent implements OnInit {
     });
   }
   
-  ngOnInit(): void {
-    this.menuID = this.menu.MenuID;
-    this.menuName = this.menu.MenuName;
-  }
+
 }

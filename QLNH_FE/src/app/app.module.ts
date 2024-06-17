@@ -12,6 +12,8 @@ import { MenuItemComponent } from './menu-item/menu-item.component';
 import { MenuItemListComponent } from './menu-item/menu-item-list/menu-item-list.component';
 import { MenuItemAddEditComponent } from './menu-item/menu-item-add-edit/menu-item-add-edit.component';
 
+import { AccountComponent } from './account/account.component';
+
 import { SharedService } from './shared.service';
 import {provideHttpClient, withInterceptorsFromDi} from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -29,6 +31,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MenuItemComponent,
     MenuItemListComponent,
     MenuItemAddEditComponent,
+    
+    AccountComponent,
   ],
   imports: [
     BrowserModule,

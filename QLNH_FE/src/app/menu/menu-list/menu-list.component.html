@@ -41,11 +41,11 @@
                 <td>{{Menu.MenuName}}</td>
                 <td>
                     <div clas="button-container">
-                        <button type="button" style="margin-right: 20px;" class="btn edit" (click)="EditMenu(Menu)"
+                        <button type="button" class="btn edit" (click)="EditMenu(Menu)"
                             data-bs-toggle="modal" data-bs-target="#myModal">
                             Sửa
                         </button>
-                        <button type="button" class="btn delete" (click)="DeleteMenu(Menu)">
+                        <button type="button" class="btn delete" (click)="DeleteMenu(Menu.MenuID)">
                             Xóa
                         </button>
                     </div>

@@ -1,1 +1,32 @@
-<p>menu-item-add-edit works!</p>
+<div class="container mt-3">
+    <div class="row mb-3">
+        <div class="col-sm-4">
+            <img [src]="pathImg" width="200px" height="150px" />
+            <input type="file" class="form-control-file" (change)="UploadImg($event)" />
+        </div>
+        <div class="col-sm-8">
+            <div class="row mb-3">
+                <label class="col-sm-3 col-form-label">Tên món ăn</label>
+                <div class="col-sm-8">
+                    <input class="form-control" [(ngModel)]="menu_ItemName" placeholder="Nhập tên món ăn" />
+                </div>
+                <label class="col-sm-3 col-form-label">Thực đơn</label>
+                <div class="col-sm-8">
+                    <select class="form-control" [(ngModel)]="menuName">
+                        <option>--Chọn thực đơn--</option>
+                        <option *ngFor="let Menu of menuNameList">{{Menu.MenuName}}</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addMenuModal"
+        (click)="AddMenuItem()" *ngIf="menu_ItemID==0">
+        Thêm món ăn
+    </button>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#editMenuModal"
+        (click)="EditMenuItem()" *ngIf="menu_ItemID!=0">
+        Sửa món ăn
+    </button>
+</div>

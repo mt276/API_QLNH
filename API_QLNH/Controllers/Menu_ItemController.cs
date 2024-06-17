@@ -43,7 +43,7 @@ namespace API_QLNH.Controllers
         [HttpPost]
         public JsonResult Post(Menu_Item menuItem)
         {
-            string query = string.Format("Insert into dbo.Menu_Item Values (N'{0}',{1},'{2}','{3}')", menuItem.Menu_ItemName, menuItem.MenuID, menuItem.Menu_ItemStartDate, menuItem.Menu_ItemPhoto);
+            string query = string.Format("Insert into dbo.Menu_Item (Menu_ItemName, MenuName, Menu_ItemImg) Values (N'{0}',N'{1}','{2}')", menuItem.Menu_ItemName, menuItem.MenuName, menuItem.Menu_ItemImg);
             DataTable table = new DataTable();
             string? sqlDataSource = _configuration.GetConnectionString("QLNH");
             SqlDataReader myReader;
@@ -64,8 +64,8 @@ namespace API_QLNH.Controllers
         [HttpPut]
         public JsonResult Put(Menu_Item menuItem)
         {
-            string query = string.Format("Update dbo.Menu_Item Set Menu_ItemName = N'{0}', MenuID = {1}, Menu_ItemStartDate = '{2}', Menu_ItemPhoto = '{3}' WHERE Menu_ItemID = {4} ",
-                menuItem.Menu_ItemName, menuItem.MenuID, menuItem.Menu_ItemStartDate, menuItem.Menu_ItemPhoto, menuItem.Menu_ItemID);
+            string query = string.Format("Update dbo.Menu_Item Set Menu_ItemName = N'{0}', MenuName = N'{1}', Menu_ItemImg = '{2}' WHERE Menu_ItemID = {3} ",
+                menuItem.Menu_ItemName, menuItem.MenuName, menuItem.Menu_ItemImg, menuItem.Menu_ItemID);
             DataTable table = new DataTable();
             string? sqlDataSource = _configuration.GetConnectionString("QLNH");
             SqlDataReader myReader;

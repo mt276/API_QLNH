@@ -3,8 +3,35 @@
   "WorkspaceRootPath": "D:\\Git\\API_QLNH\\API_QLNH\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{95BA4D64-DCDB-49A6-891B-8A864AA77F0B}|API_QLNH.csproj|d:\\git\\api_qlnh\\api_qlnh\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95BA4D64-DCDB-49A6-891B-8A864AA77F0B}|API_QLNH.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{95BA4D64-DCDB-49A6-891B-8A864AA77F0B}|API_QLNH.csproj|d:\\git\\api_qlnh\\api_qlnh\\controllers\\menu_itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95BA4D64-DCDB-49A6-891B-8A864AA77F0B}|API_QLNH.csproj|solutionrelative:controllers\\menu_itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95BA4D64-DCDB-49A6-891B-8A864AA77F0B}|API_QLNH.csproj|d:\\git\\api_qlnh\\api_qlnh\\model\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95BA4D64-DCDB-49A6-891B-8A864AA77F0B}|API_QLNH.csproj|solutionrelative:model\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95BA4D64-DCDB-49A6-891B-8A864AA77F0B}|API_QLNH.csproj|d:\\git\\api_qlnh\\api_qlnh\\model\\menu_item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95BA4D64-DCDB-49A6-891B-8A864AA77F0B}|API_QLNH.csproj|solutionrelative:model\\menu_item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95BA4D64-DCDB-49A6-891B-8A864AA77F0B}|API_QLNH.csproj|d:\\git\\api_qlnh\\api_qlnh\\api_qlnh.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{95BA4D64-DCDB-49A6-891B-8A864AA77F0B}|API_QLNH.csproj|solutionrelative:api_qlnh.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95BA4D64-DCDB-49A6-891B-8A864AA77F0B}|API_QLNH.csproj|d:\\git\\api_qlnh\\api_qlnh\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{95BA4D64-DCDB-49A6-891B-8A864AA77F0B}|API_QLNH.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95BA4D64-DCDB-49A6-891B-8A864AA77F0B}|API_QLNH.csproj|d:\\git\\api_qlnh\\api_qlnh\\api_qlnh.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{95BA4D64-DCDB-49A6-891B-8A864AA77F0B}|API_QLNH.csproj|solutionrelative:api_qlnh.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,15 +50,96 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\Git\\API_QLNH\\API_QLNH\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "D:\\Git\\API_QLNH\\API_QLNH\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAYwBYAAABjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T21:14:23.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Account.cs",
+              "DocumentMoniker": "D:\\Git\\API_QLNH\\API_QLNH\\Model\\Account.cs",
+              "RelativeDocumentMoniker": "Model\\Account.cs",
+              "ToolTip": "D:\\Git\\API_QLNH\\API_QLNH\\Model\\Account.cs",
+              "RelativeToolTip": "Model\\Account.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T21:13:24.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AQIAAH8UAAAAAAAAAAAhwJUUAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-06-17T14:00:13.478Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "API_QLNH.http",
+              "DocumentMoniker": "D:\\Git\\API_QLNH\\API_QLNH\\API_QLNH.http",
+              "RelativeDocumentMoniker": "API_QLNH.http",
+              "ToolTip": "D:\\Git\\API_QLNH\\API_QLNH\\API_QLNH.http",
+              "RelativeToolTip": "API_QLNH.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-06-17T13:59:32.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Git\\API_QLNH\\API_QLNH\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "D:\\Git\\API_QLNH\\API_QLNH\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-17T13:59:19.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "API_QLNH",
+              "DocumentMoniker": "D:\\Git\\API_QLNH\\API_QLNH\\API_QLNH.csproj",
+              "RelativeDocumentMoniker": "API_QLNH.csproj",
+              "ToolTip": "D:\\Git\\API_QLNH\\API_QLNH\\API_QLNH.csproj",
+              "RelativeToolTip": "API_QLNH.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-17T13:59:16.386Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Menu_Item.cs",
+              "DocumentMoniker": "D:\\Git\\API_QLNH\\API_QLNH\\Model\\Menu_Item.cs",
+              "RelativeDocumentMoniker": "Model\\Menu_Item.cs",
+              "ToolTip": "D:\\Git\\API_QLNH\\API_QLNH\\Model\\Menu_Item.cs",
+              "RelativeToolTip": "Model\\Menu_Item.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T13:55:24.139Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Menu_ItemController.cs",
               "DocumentMoniker": "D:\\Git\\API_QLNH\\API_QLNH\\Controllers\\Menu_ItemController.cs",
               "RelativeDocumentMoniker": "Controllers\\Menu_ItemController.cs",
               "ToolTip": "D:\\Git\\API_QLNH\\API_QLNH\\Controllers\\Menu_ItemController.cs",
               "RelativeToolTip": "Controllers\\Menu_ItemController.cs",
-              "ViewState": "AQIAAE8AAAAAAAAAAAAkwHMAAAAAAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACkAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T13:53:02.872Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-16T13:53:02.872Z"
             }
           ]
         }

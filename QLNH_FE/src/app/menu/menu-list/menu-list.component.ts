@@ -44,7 +44,7 @@ export class MenuListComponent implements OnInit{
         data=>{
           alert(data.toString());
           this.LoadMenuList();
-        }
+        } 
       );
     }
   }

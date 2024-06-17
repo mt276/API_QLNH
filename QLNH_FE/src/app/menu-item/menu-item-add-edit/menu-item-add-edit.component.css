@@ -1,0 +1,19 @@
+.form-control{
+    margin-top:5%;
+    margin-bottom: 5%;
+}
+.btn.btn-primary{
+    background-color: #4CAF50;
+}
+.form-control-file{
+    margin-top: 10%;
+}
+
+img{
+    border: 1px solid transparent; 
+    border-color: #919191; 
+    border-image: fill;
+}
+label{
+    margin-top:3%;
+}

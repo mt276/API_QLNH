@@ -4,8 +4,8 @@
     {
         public int Menu_ItemID { get; set; }
         public string? Menu_ItemName { get; set; }
-        public int MenuID { get; set; }
+        public string? MenuName { get; set; }
         public DateTime Menu_ItemStartDate { get; set; }
-        public string? Menu_ItemPhoto { get; set; }
+        public string? Menu_ItemImg { get; set; }
     }
 }

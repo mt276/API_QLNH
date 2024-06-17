@@ -21,8 +21,8 @@ export class SharedService {
     PutMenu(val:any){
       return this.http.put(this.APIUrl+'/Menu',val);
     }
-    DeleteMenu(val:any){
-      return this.http.delete(this.APIUrl+'/Menu/'+val);
+    DeleteMenu(val:any):Observable<any[]>{
+      return this.http.post<any>(this.APIUrl+'/Menu',val);
     }
 
 
@@ -36,13 +36,17 @@ export class SharedService {
       return this.http.put(this.APIUrl+'/Menu_Item',val);
     }
     DeleteMenuItem(val:any){
-      return this.http.delete(this.APIUrl+'/Menu_Item/'+val);
+      return this.http.get<any>(this.APIUrl+'/Menu_Item/'+val);
     }
     LoadImg(val:any){
       return this.http.post(this.APIUrl+'/Menu_Item/LoadImg',val);
     }
-    GetAllMenuName(val:any):Observable<any[]>{
+    GetAllMenuName():Observable<any[]>{
       return this.http.get<any>(this.APIUrl+'/Menu_Item/GetAllMenuName');
+    }
+
+    Login(val:any):Observable<any[]>{
+      return this.http.post<any>(this.APIUrl+'/Account',val);
     }
 
 }

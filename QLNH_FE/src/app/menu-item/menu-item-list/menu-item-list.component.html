@@ -1,1 +1,64 @@
-<p>menu-item-list works!</p>
+
+<div >
+    <br>
+
+    <button type="button" class="btn btn-primary" id="addMenu" data-bs-toggle="modal" data-bs-target="#myModal" (click)="AddMenuItem()">
+        Thêm món ăn
+    </button>
+
+    <br>
+    <!-- The Modal -->
+
+    <div class="modal" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+    
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">{{title}}</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" (click)="Close()"></button>
+                </div>
+    
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <app-menu-item-add-edit [menuItem]="_menuItem" *ngIf="isEdit"></app-menu-item-add-edit>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+
+    <table class="table table-bordered text-center align-middle">
+        <thead>
+            <th>Mã món ăn</th>
+            <th>Tên món ăn</th>
+            <th>Danh sách thực đơn</th>
+            <th>Ngày tạo</th>
+            <th>Ảnh món ăn</th>
+            <th>Tùy chọn</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let MenuItem of menuItemList">
+                <td>{{MenuItem.Menu_ItemID}}</td>
+                <td>{{MenuItem.Menu_ItemName}}</td>
+                <td>{{MenuItem.MenuName}}</td>
+                <td>{{MenuItem.Menu_ItemStartDate | date: 'dd-MM-yyyy'}}</td>
+                <td>
+                    <img [src]="'http://localhost:5088/Img/' + MenuItem.Menu_ItemImg" alt="{{MenuItem.Menu_ItemName}}" style="width: 200px; height: 150px;">
+                </td>
+                <td>
+                    <div clas="button-container">
+                        <button type="button" style="margin-right: 20px;" class="btn edit" (click)="EditMenuItem(MenuItem)"
+                            data-bs-toggle="modal" data-bs-target="#myModal">
+                            Sửa
+                        </button>
+                        <button type="button" class="btn delete" (click)="DeleteMenuItem(MenuItem.Menu_ItemID)">
+                            Xóa
+                        </button>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
