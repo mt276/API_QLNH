@@ -41,6 +41,10 @@ Món ăn
 
 ![menuItem](./img/menuItem.png)
 
+Sửa món ăn
+
+![menuItemEdit](./img/menuItemEdit.png)
+
 ## Tình trạng dự án
 Đã hoàn thành
 
