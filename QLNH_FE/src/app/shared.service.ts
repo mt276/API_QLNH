@@ -21,8 +21,8 @@ export class SharedService {
     PutMenu(val:any){
       return this.http.put(this.APIUrl+'/Menu',val);
     }
-    DeleteMenu(val:any):Observable<any[]>{
-      return this.http.post<any>(this.APIUrl+'/Menu',val);
+    DeleteMenu(val:any){      
+      return this.http.delete<any>(this.APIUrl+'/Menu?MenuID='+val);
     }
 
 
@@ -36,7 +36,7 @@ export class SharedService {
       return this.http.put(this.APIUrl+'/Menu_Item',val);
     }
     DeleteMenuItem(val:any){
-      return this.http.get<any>(this.APIUrl+'/Menu_Item/'+val);
+      return this.http.delete<any>(this.APIUrl+'/Menu_Item?Menu_ItemID='+val);
     }
     LoadImg(val:any){
       return this.http.post(this.APIUrl+'/Menu_Item/LoadImg',val);
@@ -46,6 +46,7 @@ export class SharedService {
     }
 
     Login(val:any):Observable<any[]>{
+      
       return this.http.post<any>(this.APIUrl+'/Account',val);
     }
 

@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { SharedService } from '../shared.service';
+import { FormControl, FormGroup } from '@angular/forms';
 
 
 @Component({
@@ -10,39 +11,41 @@ import { SharedService } from '../shared.service';
 export class AccountComponent implements OnInit{
 
   constructor(private service: SharedService) {}
+loginForm = new FormGroup({
+  username : new FormControl<string>(''),
+  password: new FormControl<string>('')
+})
+ 
 
-  userName:string='';
-  password:string='';
+result:any;
 
-  table:any=[];
 
-  account:any={
-    UserName:"",
-    Password:""
-   };
 
 
 
   ngOnInit(): void {
-    this.userName=this.account.UserName;
-    this.password = this.account.Password;
+
   }
 
   LoadLogin() {
     
     var acc = {
-      userName:this.userName,
-      password:this.password
+      userName:this.loginForm.controls.username.value,
+      password:this.loginForm.controls.password.value,
     };
+    console.log(acc);
+    
     this.service.Login(acc).subscribe(data => {
-      this.table = data;
-    });
-    if(this.table[0].Column1 == 1){
+
+      this.result = data;
+    
+    if(this.result.success== true){
       window.location.href = "http://localhost:4200/menu";
     }
     else{
       alert("Đăng nhập thất bại!");
     }
+    });
+    
   }
-
 }

@@ -83,9 +83,9 @@ namespace API_QLNH.Controllers
             return new JsonResult("Cập nhật thành công");
         }
         [HttpDelete]
-        public JsonResult Delete(Menu_Item menuItem)
+        public JsonResult Delete(string Menu_ItemID)
         {
-            string query = string.Format("Delete From dbo.Menu_Item Where Menu_ItemID = {0}", menuItem.Menu_ItemID);
+            string query = string.Format("Delete From dbo.Menu_Item Where Menu_ItemID = {0}", Menu_ItemID);
             DataTable table = new DataTable();
             string? sqlDataSource = _configuration.GetConnectionString("QLNH");
             SqlDataReader myReader;

@@ -43,7 +43,7 @@ export class MenuItemListComponent implements OnInit {
 
   DeleteMenuItem(menuItem: any) {
     if (confirm("Bạn có chắc muốn xóa?")) {
-      this.service.DeleteMenuItem(menuItem.Menu_ItemID).subscribe(
+      this.service.DeleteMenuItem(menuItem).subscribe(
         data => {
           alert(data.toString());
           this.LoadMenuItemList();

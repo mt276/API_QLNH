@@ -35,7 +35,16 @@ namespace API_QLNH.Controllers
                     myCon.Close();
                 }
             }
-            return new JsonResult(table);
+            if (table.Rows.Count>0 && (int)table.Rows[0][0] >0)
+            {
+            return new JsonResult(new {success= true, data = account });
+
+            }
+            else
+            {
+                return new JsonResult(new { success = false, data = account });
+
+            }
 
         }
     }

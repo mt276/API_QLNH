@@ -39,8 +39,9 @@ export class MenuListComponent implements OnInit{
   }
 
   DeleteMenu(menu:any){
+
     if (confirm("Bạn có chắc muốn xóa?")){
-      this.service.DeleteMenu(menu.MenuID).subscribe(
+      this.service.DeleteMenu(menu).subscribe(
         data=>{
           alert(data.toString());
           this.LoadMenuList();

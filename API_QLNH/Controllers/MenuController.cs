@@ -77,10 +77,30 @@ namespace API_QLNH.Controllers
             }
             return new JsonResult("Cập nhật thành công");
         }
+        //[HttpDelete]
+        //public JsonResult Delete(Menu menu)
+        //{
+        //    string query = string.Format("Delete From dbo.Menu Where MenuID = {0}", menu.MenuID);
+        //    DataTable table = new DataTable();
+        //    string? sqlDataSource = _configuration.GetConnectionString("QLNH");
+        //    SqlDataReader myReader;
+        //    using (SqlConnection myCon = new SqlConnection(sqlDataSource))
+        //    {
+        //        myCon.Open();
+        //        using (SqlCommand myCommand = new SqlCommand(query, myCon))
+        //        {
+        //            myReader = myCommand.ExecuteReader();
+        //            table.Load(myReader);
+        //            myReader.Close();
+        //            myCon.Close();
+        //        }
+        //    }
+        //    return new JsonResult("Xóa thành công");
+        //}
         [HttpDelete]
-        public JsonResult Delete(Menu menu)
+        public JsonResult Delete(string MenuID)
         {
-            string query = string.Format("Delete From dbo.Menu Where MenuID = {0}", menu.MenuID);
+            string query = string.Format("Delete From dbo.Menu Where MenuID = {0}", MenuID);
             DataTable table = new DataTable();
             string? sqlDataSource = _configuration.GetConnectionString("QLNH");
             SqlDataReader myReader;
